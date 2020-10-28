@@ -1,44 +1,36 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DRake</title>
+    <title>Document</title>
     <link rel="stylesheet" href="./CSS/main.css">
 </head>
-<body> 
-    <header class="page-header">
-       <div class="left">
-            <span class="samara">Самара</span>
-            <div class="icon">
-                <svg width="24" height="25" left="21" top="2" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <rect width="24" height="25" left="21" top="2" fill="url(#pattern0)"/>
-                    <defs>
-                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-                    <use xlink:href="#image0" transform="translate(-0.0208333) scale(0.0104167 0.01)"/>
-                    </pattern>
-                    <image id="image0" width="100" height="100" left="21" top="2" xlink:href="data:image/png;base64,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"/>
-                    </defs>
-                    </svg>
-            </div>
-            
-            
+<body>
+    <header>
+        <div class="search">
+            <input type="text"
+>
+        
+        </div>
+        <div class="logo">
+        <a href="/">
+            <img src="media/Logo.png" alt="Logo"
+        ></a>
 
-       </div>
-       <div class="top">
-            <span class="magazin">Магазины</span>
-            <span class="yura">Юридическим лицам</span>
-       </div>
-
-       <div class="right">
-         <span class="tel">тел: 88005553535</span>
-       </div>
-       
-    
+        </div>
+        <div class="lk">
+            <a href="/">
+                <img src="media/lk (bg).png" alt="lk(bg)">
+                
+            </a>
+        </div>
     </header>
-    <bottom class="bottom">
-        <span class="beloe"></span>
-      
-    </buttom>
+    <div class="container">
+        ipojsdpiofds
+    </div>
+    <footer>
+        fdsfds
+    </footer>
 </body>
 </html>
